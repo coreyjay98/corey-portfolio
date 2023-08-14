@@ -1,0 +1,25 @@
+.baseLayout {
+  width: 100%;
+  height: 100%;
+  /*  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(105, 105, 105) 0%,
+    rgb(105, 105, 105) 15.9%,
+    rgb(128, 128, 128) 15.9%,
+    rgb(128, 128, 128) 24.4%,
+    rgb(0, 0, 0) 24.5%,
+    rgb(0, 0, 0) 66%
+  ); */
+  background-color: black;
+}
+
+.layout {
+  padding: 2rem 2rem 2rem 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullWidthlayout {
+  width: 100%;
+}
