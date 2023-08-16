@@ -1,12 +1,15 @@
-@import "../../common/styles/index.scss";
+@import "../../../common/styles/index.scss";
 @import url("https://fonts.cdnfonts.com/css/magz");
 
 .page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70%;
   color: white;
+  background-color: black;
+  position: relative;
+  min-height: 100%;
 
   .centered {
     height: 50%;
