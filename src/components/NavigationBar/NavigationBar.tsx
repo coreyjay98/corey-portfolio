@@ -5,11 +5,10 @@ import {
   Toolbar,
   Typography,
   IconButton,
-} from "@mui/material";
-import myLogo from "../../../public/logo-black-back.png";
-import MenuIcon from "@mui/icons-material/Menu";
-import styles from "./NavigationBar.module.scss";
-import Image from "next/image";
+} from '@mui/material';
+import myLogo from '../../../public/logo-black-back.png';
+import styles from './NavigationBar.module.scss';
+import Image from 'next/image';
 
 const NavigationBar = () => {
   return (

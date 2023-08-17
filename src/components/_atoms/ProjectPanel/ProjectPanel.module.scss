@@ -1,13 +1,11 @@
 .project {
   width: 100%;
   height: auto;
-  color: black;
-  border: solid 3px grey;
+  color: white;
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   .image {
-    background-color: aquamarine;
     width: 30%;
     border: solid 1px grey;
     object-fit: cover;

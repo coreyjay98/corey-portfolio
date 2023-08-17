@@ -6,9 +6,9 @@ const ProjectsDisplay = () => {
   return (
     <div className={styles.projectsDisplay}>
       <ProjectPanel direction={ProjectDirection.Left} />
+      <ProjectPanel direction={ProjectDirection.Right} />
       <ProjectPanel direction={ProjectDirection.Left} />
-      <ProjectPanel direction={ProjectDirection.Left} />
-      <ProjectPanel direction={ProjectDirection.Left} />
+      <ProjectPanel direction={ProjectDirection.Right} />
     </div>
   );
 };

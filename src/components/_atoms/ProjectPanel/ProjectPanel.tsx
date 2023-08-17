@@ -1,25 +1,17 @@
-import React, { useState } from "react";
-import styles from "./ProjectPanel.module.scss";
-import { projectContent } from "./utils";
-import { GitHub } from "@mui/icons-material";
-import useScreenResize from "../../../common/Hooks/useScreenResize";
-import { WindowSize } from "../../../common/helpers/windowSize";
-import { ProjectDirection } from "../../../common/types";
-import Image from "next/image";
+import React from 'react';
+import styles from './ProjectPanel.module.scss';
+import { projectContent } from './utils';
+import { GitHub } from '@mui/icons-material';
+import useScreenResize from '../../../common/Hooks/useScreenResize';
+import { WindowSize } from '../../../common/helpers/windowSize';
+import { ProjectDirection } from '../../../common/types';
 
 interface ProjectPanelProps {
   direction: ProjectDirection;
 }
 
 const ProjectPanel: React.FC<ProjectPanelProps> = ({ direction }) => {
-  const [imageVisible, setImageVisible] = useState(true);
   const windowXSize = useScreenResize();
-
-  const handleImageClick = () => {
-    if (windowXSize <= WindowSize.small) {
-      setImageVisible(false);
-    }
-  };
   return windowXSize > WindowSize.small ? (
     <div
       className={
@@ -30,7 +22,7 @@ const ProjectPanel: React.FC<ProjectPanelProps> = ({ direction }) => {
     >
       {
         // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
-        <img src={"https://placehold.co/600x400"} className={styles.image} />
+        <img src={'https://placehold.co/600x400'} className={styles.image} />
       }
       <div className={styles.panel}>
         <div className={styles.text}>
@@ -53,10 +45,14 @@ const ProjectPanel: React.FC<ProjectPanelProps> = ({ direction }) => {
     <div className={styles.flexContainer}>
       <div className={styles.flexItem}>
         <div className={styles.mobileImageHolder}>
-          <img
-            className={styles.mobileImage}
-            src="https://placehold.co/600x400"
-          />
+          {
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              className={styles.mobileImage}
+              src="https://placehold.co/600x400"
+              alt="placeholder"
+            />
+          }
         </div>
       </div>
       <div className={styles.flexItem}>
@@ -84,9 +80,3 @@ const ProjectPanel: React.FC<ProjectPanelProps> = ({ direction }) => {
 };
 
 export default ProjectPanel;
-
-<div className={styles.flexContainer}>
-  <div className={styles.flexItem}>Div 1</div>
-  <div className={styles.flexItem}>Div 2</div>
-  <div className={styles.flexItem}>Div 3</div>
-</div>;
