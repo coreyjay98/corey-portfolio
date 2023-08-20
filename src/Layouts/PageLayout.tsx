@@ -1,4 +1,4 @@
-import styles from "./PageLayout.module.scss";
+import styles from './PageLayout.module.scss';
 
 const PageLayout = ({
   children,
@@ -8,7 +8,7 @@ const PageLayout = ({
   fullWidth?: boolean;
 }) => {
   return (
-    <div className={styles.baseLayout}>
+    <div className={`${styles.baseLayout} min-h-screen`}>
       <div className={fullWidth ? styles.fullWidthLayout : styles.layout}>
         {children}
       </div>

@@ -1,15 +1,15 @@
 'use client';
 import './globals.css';
 import PageLayout from '../src/Layouts/PageLayout';
-import ProjectsPage from '../src/components/_PageComponents/ProjectsPage/ProjectsPage';
-import LandingPage from '../src/components/_PageComponents/LandingPage/LandingPage';
+import AboutPage from '../src/components/_PageComponents/AboutPage/AboutPage';
 
 const Page = () => {
   return (
-    <PageLayout>
-      <LandingPage />
-      <ProjectsPage />
-    </PageLayout>
+    <>
+      <PageLayout>
+        <AboutPage />
+      </PageLayout>
+    </>
   );
 };
 

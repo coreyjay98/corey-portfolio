@@ -12,7 +12,7 @@ const useScreenResize = (): number => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  });
+  }, []);
   return screenWidth;
 };
 
