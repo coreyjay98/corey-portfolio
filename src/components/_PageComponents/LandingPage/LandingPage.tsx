@@ -1,6 +1,5 @@
-// import Image from 'next/image';
-// import myLogo from '../../../../public/logo-black-back.png';
-import styles from './LandingPage.module.scss';
+import Image from 'next/image';
+import myLogo from '../../../../public/logo-black-back.png';
 import { landingPageContent } from './utils';
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import Socials from '../../_atoms/Socials/Socials';
@@ -8,27 +7,27 @@ import Socials from '../../_atoms/Socials/Socials';
 
 const LandingPage = () => {
   return (
-    <section className="h-screen w-full content-center items-center justify-center">
-      <div className=" wcontent-center items-center w-4/5 justify-center">
-        <div className={styles.logoHolder}>
-          {/*  <Image
+    <section className="h-screen w-full content-center items-center justify-center flex flex-col ">
+      <section className=" h-3/4 md:h-3/4 w-10/12 flex direction-column flex-col items-center  w-4/5 justify-center mb-4">
+        <div className="w-full h-1/2 relative ">
+          <Image
             src={myLogo}
-            width={150}
-            height={150}
             quality={100}
             alt="Page Logo"
-            layout="responsive"
-          /> */}
+            fill
+            objectFit="contain"
+            className="md:p-5 p-0"
+          />
         </div>
-        <h1 className="content-center items-center text-center">
+        <h1 className="mb-4 text-6xl md:text-8xl font-extrabold tracking-wide content-center items-center text-center flex">
           {landingPageContent.name}
         </h1>
-        <p className="content-center items-center text-center">
+        <p className="content-center items-center text-center flex  md:w-2/4 w-full">
           {landingPageContent.description}
         </p>
         <Socials />
-      </div>
-      <div className={styles.pageBottom}>
+      </section>
+      <div className="absolute bottom-0 w-full flex justify-center">
         <ArrowCircleDownIcon sx={{ fontSize: 50, color: 'white' }} />
       </div>
     </section>
