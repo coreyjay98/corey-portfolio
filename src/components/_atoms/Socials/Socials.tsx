@@ -5,7 +5,7 @@ import { socialsLinks } from './utils';
 
 const Socials = () => {
   return (
-    <div className={styles.socialsHolder}>
+    <div className={`${styles.socialsHolder} bg-zinc-600 p-4`}>
       <a href={socialsLinks.linkedIn} target="_blank" className={styles.link}>
         <LinkedIn fontSize="large" sx={{ '&:hover': { color: '#0072b1' } }} />
       </a>

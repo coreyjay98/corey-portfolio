@@ -8,7 +8,7 @@ const PageLayout = ({
   fullWidth?: boolean;
 }) => {
   return (
-    <div className={`${styles.baseLayout} min-h-screen`}>
+    <div className={`${styles.baseLayout} h-auto`}>
       <div className={fullWidth ? styles.fullWidthLayout : styles.layout}>
         {children}
       </div>

@@ -1,19 +1,16 @@
-'use client';
 import './globals.css';
-import PageLayout from '../src/Layouts/PageLayout';
 import AboutPage from '../src/components/_PageComponents/AboutPage/AboutPage';
 import LandingPage from '../src/components/_PageComponents/LandingPage/LandingPage';
+import ProjectsPage from '../src/components/_PageComponents/ProjectsPage/ProjectsPage';
+import RootLayout from './layout';
 
 const Page = () => {
   return (
-    <>
-      <PageLayout>
-        <section className="h-full ">
-          <LandingPage />
-        </section>
-        <AboutPage />
-      </PageLayout>
-    </>
+    <RootLayout>
+      <LandingPage />
+      <AboutPage />
+      <ProjectsPage />
+    </RootLayout>
   );
 };
 
