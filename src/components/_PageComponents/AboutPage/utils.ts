@@ -2,7 +2,14 @@ export const aboutPageContent = {
   title: 'Meet Corey',
   about: {
     title: 'About Me',
-    text: "I'm Corey, a dedicated front-end engineer with a strong command of JavaScript and its vast ecosystem. Currently, I contribute my expertise to BT, where I leverage React and TypeScript daily to craft customer-facing applications that play a pivotal role in customer interactions across the business. These applications thrive under heavy daily traffic, offering seamless experiences to users.",
+    text: "Hello, I'm Corey Samuels, a Front-end engineer at BT. My work centers around JavaScript, React, and Typescript, where I build high-traffic customer-facing applications.",
+    secondaryText:
+      "Beyond my professional role, I'm a passionate coder, constantly exploring new tech and coding challenges. My drive to learn and innovate not only enhances my work at BT but also fuels my endless curiosity about web development.",
+  },
+
+  skills: {
+    title: 'Skills & Technologies',
+    text: 'I possess strong front-end development skills, including JavaScript and ReactJS, while also demonstrating a solid understanding of back-end technologies and programming fundamentals.',
   },
   aboutList: [
     {
@@ -41,14 +48,16 @@ export const aboutPageContent = {
 };
 
 export const skillsList = [
-  'JavaScript',
-  'Java',
   'TypeScript',
+  'ReactJS',
+  'JavaScript',
+  'NextJS',
+  'Tailwind',
   'HTML5',
   'CSS3',
-  'ReactJS',
+  'API',
+  'MongoDB',
   'jQuery',
   'Node.js',
   'SQL',
-  'MongoDB',
 ];
