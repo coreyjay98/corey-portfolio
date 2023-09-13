@@ -12,10 +12,12 @@ const Socials = () => {
       <a href={socialsLinks.gitHub} target="_blank" className={styles.link}>
         <GitHub fontSize="large" sx={{ '&:hover': { color: '#d4d4d8' } }} />
       </a>
-      <Mail
-        fontSize="large"
-        sx={{ '&:hover': { color: '#d4d4d8', cursor: 'pointer' } }}
-      />
+      <a href="mailto:coreyjsamuels@gmail.com">
+        <Mail
+          fontSize="large"
+          sx={{ '&:hover': { color: '#d4d4d8', cursor: 'pointer' } }}
+        />
+      </a>
     </div>
   );
 };
